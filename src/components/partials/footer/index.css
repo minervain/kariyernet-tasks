@@ -1,0 +1,64 @@
+.sarmala {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: solid 0.3px;
+    background-color: #fff; 
+    box-sizing: border-box;
+}
+
+.account {
+    display: flex;
+    text-align: center !important;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 15px;
+    margin-bottom: 5px;
+
+}
+
+.social {
+    width: 30px;
+    height: 30px;
+    padding: 8px;
+    margin-left:5px ;
+
+}
+
+.s1 {
+    width: 25px;
+    height: 25px;
+    background-image: url(../../../assets/twitter.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.s2 {
+    width: 25px;
+    height: 25px;
+    background-image: url(../../../assets/telegram.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.s3 {
+    width: 25px;
+    height: 25px;
+    background-image: url(../../../assets/linkedin\ \(1\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.copy{
+    color: #6c757d !important;
+    font-size: 0.875em;
+    --bs-text-opacity: 1;
+    box-sizing: border-box;
+    padding-bottom: 25px;
+}
