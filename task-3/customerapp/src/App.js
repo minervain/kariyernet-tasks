@@ -1,25 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import { Routes, Route, Link } from 'react-router-dom';
+import Customer from './pages/Customer';
+import AddCustomer from './pages/AddCustomer';
+import { useState } from 'react';
+
 
 function App() {
+  const [sorted, setSorted] = useState(false);
+  const handleSort = () => {
+    setSorted(!sorted); 
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <div className='container'>
+        <div className='logo'>MİNERVAİN</div>
+        <div className='Alfabetik' onClick={handleSort}>Alfabetik Sırala</div>
+        <div className='logout'>   <Link to={'/CustomerAdd'} style={{ textDecoration: 'none', color: 'white', fontWeight: 'bold' }}> ADD+</Link></div>
+
+      </div>
+      <Routes>
+
+        <Route path='/' element={<Customer sorted={sorted} />} />
+        <Route path='/CustomerAdd' element={<AddCustomer />} />
+
+
+      </Routes>
+
     </div>
-  );
+  )
 }
+
+
 
 export default App;

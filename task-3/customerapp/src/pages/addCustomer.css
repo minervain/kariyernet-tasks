@@ -1,0 +1,46 @@
+.auth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    width: 100%;
+
+}
+
+.auth .islem {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.auth input {
+    padding: 0.5rem;
+    outline: none;
+    margin: 0.2rem;
+    width: 20%;
+    border: purple 1px solid;
+
+}
+
+.auth .google {
+    color: purple;
+    cursor: pointer;
+    padding: 0.2rem;
+    margin: 0.5rem;
+}
+
+.auth .logres {
+    font-size: small;
+    color: purple;
+    cursor: pointer;
+    padding: 0.2rem;
+}
+
+.auth .buton {
+    background-color: purple;
+    color: white;
+    width: 10%;
+    height: 5vh;
+    margin: 1rem;
+}
