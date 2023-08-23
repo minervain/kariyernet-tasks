@@ -6,9 +6,11 @@ import { useState } from 'react';
 
 
 function App() {
+
+  
   const [sorted, setSorted] = useState(false);
   const handleSort = () => {
-    setSorted(!sorted); 
+    setSorted(!sorted);
   };
 
   return (

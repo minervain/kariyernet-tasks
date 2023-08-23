@@ -22,7 +22,7 @@ function AddCustomer() {
     axios.post('https://northwind.vercel.app/api/customers', newCustom)
       .then(res => {
         alert('Success!!');
-        navigate('/'); // Yeni müşteri eklendikten sonra ana sayfaya yönlendiriyoruz
+        navigate('/');
 
 
       })

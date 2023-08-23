@@ -26,7 +26,7 @@ export default function Customer({ sorted }) {
                 console.log(res.data);
             })
             .catch(error => {
-                console.error("API isteği sırasında hata oluştu:", error);
+                console.error('xxxx', error);
                 setLoading(true);
             });
     }, [sorted]);

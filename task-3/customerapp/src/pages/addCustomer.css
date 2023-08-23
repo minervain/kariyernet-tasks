@@ -23,12 +23,6 @@
 
 }
 
-.auth .google {
-    color: purple;
-    cursor: pointer;
-    padding: 0.2rem;
-    margin: 0.5rem;
-}
 
 .auth .logres {
     font-size: small;
